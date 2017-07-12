@@ -22,7 +22,9 @@ You are now ready to use the plugin !
 
 #### above
 Takes a number `threshold` and a time period in seconds `dt`.
+
 If the condition `(> (:metric event) threshold)` is valid for all events received during at least the period `dt`, valid events received after the `dt` period will be passed on until an invalid event arrives.
+
 `:metric` should not be nil (it will produce exceptions).
 
 ```clojure
@@ -32,7 +34,9 @@ If the condition `(> (:metric event) threshold)` is valid for all events receive
 #### below
 
 Takes a number `threshold` and a time period in seconds `dt`.
+
 If the condition `(< (:metric event) threshold)` is valid for all events received during at least the period `dt`, valid events received after the `dt` period will be passed on until an invalid event arrives.
+
 `:metric` should not be nil (it will produce exceptions).
 
 
@@ -43,7 +47,9 @@ If the condition `(< (:metric event) threshold)` is valid for all events receive
 ##### between
 
 Takes two numbers, `low` and `high`, and a time period in seconds, `dt`.
+
 If the condition `(and (> (:metric event) low) (< (:metric event) high))` is valid for all events received during at least the period `dt`, valid events received after the `dt` period will be passed on until an invalid event arrives.
+
 `:metric` should not be nil (it will produce exceptions)."
 
 ```clojure
@@ -53,7 +59,9 @@ If the condition `(and (> (:metric event) low) (< (:metric event) high))` is val
 #### outside
 
 Takes two numbers, `low` and `high`, and a time period in seconds, `dt`.
+
 If the condition `(or (< (:metric event) low) (> (:metric event) high))` is valid for all events received during at least the period `dt`, valid events received after the `dt` period will be passed on until an invalid event arrives.
+
 `:metric` should not be nil (it will produce exceptions).
 
 ```clojure
@@ -63,6 +71,7 @@ If the condition `(or (< (:metric event) low) (> (:metric event) high))` is vali
 #### critical
 
 Takes a time period in seconds `dt`.
+
 If all events received during at least the period `dt` have `:state` critical, new critical events received after the `dt` period will be passed on until an invalid event arrives.
 
 ```clojure
@@ -75,6 +84,7 @@ A stream which detects if a condition `(f event)` is true during `dt` seconds.
 Takes a function of events `f` and a time period `dt` in seconds.
 
 If the condition is valid for all events received during at least the period `dt`, valid events received after the `dt` period will be passed on until an invalid event arrives.
+
 Skips events that are too old or that do not have a timestamp.
 
 For example, you can reimplement `critical` using `cond-dt`:
