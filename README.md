@@ -1,6 +1,6 @@
 # riemann-cond-dt-plugin
 
-Riemann plugin for checking if a condition is true for a time period.
+Riemann plugin to check if a condition is true for a time period.
 
 ## Howto
 

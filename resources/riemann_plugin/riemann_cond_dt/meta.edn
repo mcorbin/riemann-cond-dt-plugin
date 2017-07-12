@@ -1,0 +1,4 @@
+{:plugin "riemann-cond-dt"
+ :title  " Riemann plugin to check if something is true for a time period."
+ :git-repo "https://github.com/mcorbin/riemann-cond-dt-plugin"
+ :require riemann-cond-dt.core}
