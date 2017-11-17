@@ -2,6 +2,8 @@
 
 Riemann plugin to check if a condition is true for a time period.
 
+[![Clojars Project](https://img.shields.io/clojars/v/riemann-cond-dt.svg)](https://clojars.org/riemann-cond-dt)
+
 ## Howto
 
 ### Loading the plugin
