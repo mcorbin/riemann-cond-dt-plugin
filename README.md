@@ -1,6 +1,6 @@
 # riemann-cond-dt-plugin
 
-Riemann plugin to check if a condition is true for a time period.
+A plugin for verifying that a condition on an event is true during a time period.
 
 [![Clojars Project](https://img.shields.io/clojars/v/riemann-cond-dt.svg)](https://clojars.org/riemann-cond-dt)
 
