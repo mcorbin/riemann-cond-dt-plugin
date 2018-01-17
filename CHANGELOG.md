@@ -1,6 +1,8 @@
 # Change Log
 
-## [Unreleased]
+## [1.0.3] - 17-01-2018
+
+Bump Riemann version to 0.3.0
 
 ## [1.0.2] - 07-12-2017
 
