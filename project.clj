@@ -1,4 +1,4 @@
-(defproject riemann-cond-dt "1.0.3"
+(defproject riemann-cond-dt "1.0.4-SNAPSHOT"
   :description "Riemann plugin for checking if something is true for a time period. "
   :url "https://github.com/mcorbin/riemann-cond-dt-plugin"
   :license {:name "Eclipse Public License"
