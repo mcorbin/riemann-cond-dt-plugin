@@ -3,5 +3,5 @@
   :url "https://github.com/mcorbin/riemann-cond-dt-plugin"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :profiles {:dev {:dependencies [[riemann "0.2.14"]
-                                  [org.clojure/clojure "1.8.0"]]}})
+  :profiles {:dev {:dependencies [[riemann "0.3.0"]
+                                  [org.clojure/clojure "1.9.0"]]}})
